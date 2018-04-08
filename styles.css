@@ -65,6 +65,10 @@ footer li a:hover {
   text-decoration: underline;
 }
 
+input:focus {
+  outline-width: 0;
+}
+
 .header-left {
   opacity: 0.75;
 }
@@ -78,7 +82,7 @@ footer li a:hover {
   align-items: center;
 }
 
-.header-right a:hover {
+.header-right .text:hover {
   opacity: 0.75;
 }
 
@@ -93,6 +97,10 @@ footer li a:hover {
   border-radius: 2px;
   font-weight: bold;
   margin-right: 15px;
+}
+
+.btn:hover {
+  text-decoration: none;
 }
 
 .search-box {
@@ -116,6 +124,10 @@ footer li a:hover {
   padding-left: 15px;
 }
 
+.search-box:hover {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.26), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
 .search-box a {
   height: 34px;
   margin: 0;
@@ -129,14 +141,34 @@ footer li a:hover {
 
 }
 
-input:focus {
-  outline-width: 0;
-}
-
 .brand {
   width: 450px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 120px;
+}
+
+.button-bar {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.main-btn {
+  height: 34px;
+  background-color: #F8F8F8;
+  color: #757575;
+  padding: 11px 16px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 2px;
+  margin: 3px;
+  cursor: default;
+  border: 1px solid rgb(242, 242, 242);
+}
+
+.main-btn:hover {
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  color: #222;
 }
